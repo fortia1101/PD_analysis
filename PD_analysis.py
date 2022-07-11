@@ -163,13 +163,13 @@ def n_roop7(time_start, p=None, char=[], target=None):
 
 def n_roop8(time_start, pred=None, char=[], target=None):
     for i in range(len(char)):
-        for i in range(len(char)):
-            for i in range(len(char)):
-                for i in range(len(char)):
-                    for i in range(len(char)):
-                        for i in range(len(char)):
-                            for i in range(len(char)):
-                                for i in range(len(char)):
+        for j in range(len(char)):
+            for k in range(len(char)):
+                for l in range(len(char)):
+                    for m in range(len(char)):
+                        for n in range(len(char)):
+                            for o in range(len(char)):
+                                for p in range(len(char)):
                                     pred = char[i] + char[j] + char[k] + char[l] + char[m] + char[n] + char[o] + char[p]
                                     if (pred == target):
                                         print(f'あなたのパスワード：{pred}')
@@ -218,7 +218,7 @@ def PD_analysis():
         # random.shuffle(char) # 配列の要素をシャッフル
 
         time_start = time.time() # 時間計測開始
-        
+
         n_roop1(time_start, pred, char, target)
         n_roop2(time_start, pred, char, target)
         n_roop3(time_start, pred, char, target)
